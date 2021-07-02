@@ -9,3 +9,7 @@ button:focus {
 }
 
 @tailwind utilities;
+
+.button {
+  @apply flex rounded-full py-4 px-10 uppercase font-semibold text-sm lg:text-base tracking-wider border-2 hover:border-white hover:bg-transparent text-offwhite bg-themecolor1 border-themecolor1 transition ease-out duration-500;
+}

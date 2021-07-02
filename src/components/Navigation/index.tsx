@@ -77,15 +77,9 @@ export default function Navigation() {
                 scrolledDown ? "text-2xl" : "text-4xl"
               } font-bold texthovereffect`}
             >
-              {scrolledDown || navOpen ? (
+              {(scrolledDown || navOpen) && (
                 <img
                   src="/images/nesbrukebab/nesbrukebabblacktext.png"
-                  alt="logo picture/burger"
-                  className="max-w-xs max-h-14 lg:max-h-16 object-cover"
-                />
-              ) : (
-                <img
-                  src="/images/nesbrukebab/nesbrukebabwhitetext.png"
                   alt="logo picture/burger"
                   className="max-w-xs max-h-14 lg:max-h-16 object-cover"
                 />
@@ -110,19 +104,6 @@ export default function Navigation() {
                 />
               )}
             </button>
-            <Link
-              to="social"
-              smooth={true}
-              duration={SCROLL_DURATION}
-              className="ml-5"
-            >
-              <a className="block">
-                <FontAwesomeIcon
-                  icon={faFacebook}
-                  className="text-3xl texthovereffect"
-                />
-              </a>
-            </Link>
           </div>
         )}
       </div>

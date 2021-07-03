@@ -80,9 +80,9 @@ export default function Navigation() {
       {/* Container for logo and icon */}
       <div
         className={`
-          ${scrolledDown && !navOpen ? "pt-3 bg-offwhite" : "lg:pt-10"}
-          ${navOpen && !scrolledDown ? "pt-5 pb-5 bg-offwhite" : ""} 
-          ${scrolledDown && navOpen ? "pt-3 bg-offwhite" : ""}
+          ${scrolledDown && !navOpen ? "pt-3 bg-white" : "lg:pt-10"}
+          ${navOpen && !scrolledDown ? "pt-5 pb-5 bg-white" : ""} 
+          ${scrolledDown && navOpen ? "pt-3 bg-white" : ""}
           ${!scrolledDown && !navOpen ? "pt-5 pb-5" : ""}
 
           flex justify-between items-center lg:px-0 px-6 pb-3 lg:justify-center`}
@@ -132,7 +132,7 @@ export default function Navigation() {
         <motion.div
           className={`
               block text-white bg-dropdown
-              ${scrolledDown && !navOpen && "bg-offwhite"}
+              ${scrolledDown && !navOpen && "bg-white"}
               ${scrolledDown && navOpen && "bg-dropdown"}`}
           variants={dropdownVariants}
           initial="hidden"
@@ -165,7 +165,7 @@ export default function Navigation() {
         <div
           className={`
               block
-              ${scrolledDown ? "bg-offwhite text-black" : "text-white"}
+              ${scrolledDown ? "bg-white text-black" : "text-white"}
               `}
         >
           <ul

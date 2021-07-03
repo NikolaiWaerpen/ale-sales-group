@@ -35,7 +35,7 @@ const buttonVariant = {
 
 export default function Hero() {
   return (
-    <div className="relative z-0 bg-offblack shadow-xl">
+    <div className="relative z-0 bg-offblack shadow-xl" id="hjem">
       <img
         src="/images/heroimage.webp"
         alt="Meeting"
@@ -73,7 +73,7 @@ export default function Hero() {
         />
       </div>
       <div className="absolute inset-0 flex justify-center top-3/4 z-40">
-        <Link to="menu" smooth={true} duration={SCROLL_DURATION}>
+        <Link to="kontakt" smooth={true} duration={SCROLL_DURATION}>
           <motion.button
             className="flex rounded-md py-4 px-10 uppercase font-semibold text-sm lg:text-base tracking-wider border-2 hover:border-white hover:bg-transparent hover:text-white text-offblack bg-theme-600 border-theme-600 transition ease-out duration-500"
             variants={buttonVariant}

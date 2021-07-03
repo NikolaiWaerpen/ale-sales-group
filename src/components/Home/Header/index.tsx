@@ -1,7 +1,7 @@
 /* This example requires Tailwind CSS v2.0+ */
 export default function Header() {
   return (
-    <div className="bg-white mt-16">
+    <div className="bg-white mt-16" id="omoss">
       <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-base font-semibold text-theme-600 tracking-wide uppercase">

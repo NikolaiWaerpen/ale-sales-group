@@ -9,19 +9,19 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const dropdownOptions = [
   {
     title: "Hjem",
-    to: "home",
+    to: "hjem",
   },
   {
     title: "Om oss",
-    to: "home",
+    to: "omoss",
   },
   {
-    title: "Kunder",
-    to: "home",
+    title: "Partnere",
+    to: "partnere",
   },
   {
     title: "Kontakt",
-    to: "home",
+    to: "kontakt",
   },
 ];
 

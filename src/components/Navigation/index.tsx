@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import { SCROLL_DURATION } from "../../consts";
 import { motion } from "framer-motion";
 
-import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -78,7 +77,7 @@ export default function Navigation() {
         scrolledDown || navOpen ? "text-black" : "text-white"
       } w-screen fixed z-50`}
     >
-      {/* Container for title and burger menu */}
+      {/* Container for logo and icon */}
       <div
         className={`
           ${scrolledDown && !navOpen ? "pt-3 bg-offwhite" : "lg:pt-10"}
@@ -86,9 +85,9 @@ export default function Navigation() {
           ${scrolledDown && navOpen ? "pt-3 bg-offwhite" : ""}
           ${!scrolledDown && !navOpen ? "pt-5 pb-5" : ""}
 
-          flex justify-between items-center paddingx pb-3 lg:justify-center`}
+          flex justify-between items-center lg:px-0 px-6 pb-3 lg:justify-center`}
       >
-        {/* Title */}
+        {/* Logo */}
         <div>
           <Link to="home" smooth={true} duration={SCROLL_DURATION}>
             <a
@@ -140,7 +139,7 @@ export default function Navigation() {
           animate="visible"
         >
           <ul
-            className={`uppercase py-1 paddingx
+            className={`uppercase py-1 lg:px-0 px-6
             ${navOpen ? "divide-y divide-dropdownborder" : "font-bold pb-3"}`}
           >
             {dropdownOptions.map((option, key) => (
@@ -170,7 +169,7 @@ export default function Navigation() {
               `}
         >
           <ul
-            className={`flex justify-center uppercase py-1 paddingx font-bold pb-3 space-x-4`}
+            className={`flex justify-center uppercase py-1 lg:px-0 px-6 font-bold pb-3 space-x-4`}
           >
             {dropdownOptions.map((option, key) => (
               <div key={key}>

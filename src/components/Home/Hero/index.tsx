@@ -58,7 +58,7 @@ export default function Hero() {
           initial="hidden"
           animate="visible"
         >
-          gir gode resultater
+          gir utrolige resultater
         </motion.h2>
       </div>
       <div className="absolute inset-0 flex justify-center z-20 top-24 lg:top-40">

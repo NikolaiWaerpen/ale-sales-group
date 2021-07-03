@@ -1,6 +1,6 @@
 /* This example requires Tailwind CSS v2.0+ */
 import {
-  GlobeAltIcon,
+  AcademicCapIcon,
   LightningBoltIcon,
   ScaleIcon,
   UserGroupIcon,
@@ -17,7 +17,7 @@ const features = [
     name: "Talentfulle medarbeidere",
     description:
       "Våre medarbeidere er unge og kreative, og nettopp derfor kan de bidra med kreative og annerledes innspill.",
-    icon: GlobeAltIcon,
+    icon: AcademicCapIcon,
   },
   {
     name: "Spisskompetanse",

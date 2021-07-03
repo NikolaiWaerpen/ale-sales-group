@@ -75,7 +75,7 @@ export default function Hero() {
       <div className="absolute inset-0 flex justify-center top-3/4 z-40">
         <Link to="menu" smooth={true} duration={SCROLL_DURATION}>
           <motion.button
-            className="flex rounded-full py-4 px-10 uppercase font-semibold text-sm lg:text-base tracking-wider border-2 hover:border-white hover:bg-transparent hover:text-white text-offblack bg-theme-600 border-theme-600 transition ease-out duration-500"
+            className="flex rounded-md py-4 px-10 uppercase font-semibold text-sm lg:text-base tracking-wider border-2 hover:border-white hover:bg-transparent hover:text-white text-offblack bg-theme-600 border-theme-600 transition ease-out duration-500"
             variants={buttonVariant}
             initial="hidden"
             animate="visible"

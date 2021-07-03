@@ -160,7 +160,7 @@ export default function Navigation() {
         </motion.div>
       )}
 
-      {/* Screens over 1024px */}
+      {/* Nav for screens over 1024px */}
       {screenLarge && (
         <div
           className={`
@@ -169,21 +169,21 @@ export default function Navigation() {
               `}
         >
           <ul
-            className={`flex justify-center uppercase py-1 lg:px-0 px-6 font-bold pb-3 space-x-4`}
+            className={`flex justify-center uppercase py-1 lg:px-0 px-6 font-bold pb-3 space-x-12`}
           >
             {dropdownOptions.map((option, key) => (
-              <div key={key}>
+              <li key={key}>
                 <Link
                   to={option.to}
                   smooth={true}
                   duration={SCROLL_DURATION}
                   onClick={closeNav}
                 >
-                  <li className="lg:px-5 lg:py-0 py-4 block">
-                    <a className="texthovereffect">{option.title}</a>
-                  </li>
+                  <a className="hover:text-theme-600 cursor-pointer">
+                    {option.title}
+                  </a>
                 </Link>
-              </div>
+              </li>
             ))}
           </ul>
         </div>

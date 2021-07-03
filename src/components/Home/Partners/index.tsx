@@ -4,24 +4,24 @@ const partners = [
     name: "The Box",
     description:
       "Høykvalitets restaurantmat laget av profesjonelle kokker, leveres deg daglig! 10 ulike retter fra  alle verdens-hjørner basert på de beste råvarene. Her er løsningen på overtidsmat!",
-    imageUrl: "http://placehold.jp/150x150.png",
-    // imageUrl: "/images/partners/thebox.webp",
+    // imageUrl: "http://placehold.jp/150x150.png",
+    imageUrl: "/images/partners/thebox.webp",
     url: "#",
   },
   {
     name: "GlobalConnect",
     description:
       " Ledende leverandøren av fiberbasert datakommunikasjon og datasentre i Nordeuropa.",
-    imageUrl: "http://placehold.jp/150x150.png",
-    // imageUrl: "/images/partners/.webp",
+    // imageUrl: "http://placehold.jp/150x150.png",
+    imageUrl: "/images/partners/.webp",
     url: "#",
   },
   {
     name: "CleanBil",
     description:
-      "CleanBil er ett ambulerende vasketeam som vasker bilen når det passer deg og din bedrift, der du er! Vi leverer ett miljøvennlig produkt. Visjon: kjemikalie fri og skånsom vask basert på damp.",
-    imageUrl: "http://placehold.jp/150x150.png",
-    // imageUrl: "/images/partners/.webp",
+      "CleanBil er ett ambulerende vasketeam som vasker bilen når det passer deg og din bedrift, der du er! Vi leverer et miljøvennlig produkt. Visjon: kjemikalie fri og skånsom vask basert på damp.",
+    // imageUrl: "http://placehold.jp/150x150.png",
+    imageUrl: "/images/partners/.webp",
     url: "#",
   },
 ];

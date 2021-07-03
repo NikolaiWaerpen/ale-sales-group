@@ -21,7 +21,12 @@ const navigation = [
   { name: "Kontakt", href: "#" },
 ];
 
-const services = ["Tjeneste 1", "Tjeneste 2", "Tjeneste 3", "Tjeneste 4"];
+const services = [
+  "Rådgivning",
+  "Visjon",
+  "Enklere hverdag",
+  "Kreative løsninger",
+];
 
 const social = [
   {

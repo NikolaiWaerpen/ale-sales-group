@@ -40,33 +40,32 @@ export default function Testimonial() {
         </svg>
 
         <div className="relative">
-          <img
+          {/* <img
             className="mx-auto h-8"
             src="http://placehold.jp/80x40.png"
             alt="Logo"
-          />
+          /> */}
           <blockquote className="mt-10">
-            <div className="max-w-3xl mx-auto text-center text-2xl leading-9 font-medium text-gray-900">
+            <div className="max-w-3xl mx-auto text-center text-4xl leading-9 font-medium text-gray-900">
               <p>
-                &ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Nemo expedita voluptas culpa sapiente alias molestiae. Numquam
-                corrupti in laborum sed rerum et corporis.&rdquo;
+                &ldquo;Success is not final; Failure is not fatal: It is the
+                courage to continue that counts.&rdquo;
               </p>
             </div>
             <footer className="mt-8">
               <div className="md:flex md:items-center md:justify-center">
-                <div className="md:flex-shrink-0">
+                {/* <div className="md:flex-shrink-0">
                   <img
                     className="mx-auto h-10 w-10 rounded-full"
                     src="http://placehold.jp/20x20.png"
                     alt=""
                   />
-                </div>
+                </div> */}
                 <div className="mt-3 text-center md:mt-0 md:ml-4 md:flex md:items-center">
-                  <div className="text-base font-medium text-gray-900">
-                    Ola Nordmann
+                  <div className="text-xl font-medium text-theme-700">
+                    Winston Churchill
                   </div>
-
+                  {/* 
                   <svg
                     className="hidden md:block mx-1 h-5 w-5 text-theme-600"
                     fill="currentColor"
@@ -77,7 +76,7 @@ export default function Testimonial() {
 
                   <div className="text-base font-medium text-gray-500">
                     CEO, Testimonial
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </footer>

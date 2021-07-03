@@ -37,36 +37,36 @@ export default function Hero() {
   return (
     <div className="relative z-0 bg-offblack shadow-xl">
       <img
-        src="/images/flour.jpg"
-        alt="background flour"
-        className="w-screen h-screen75 lg:h-screen object-cover object-center opacity-25"
+        src="/images/heroimage.webp"
+        alt="Meeting"
+        className="w-screen h-screen75 lg:h-screen object-cover object-center opacity-20"
       />
       <div className="absolute inset-0 flex justify-center top-48 lg:top-52 z-20">
         <motion.h1
-          className="text-4xl lg:text-6xl text-offwhite font-extrabold tracking-wider uppercase"
+          className="text-4xl lg:text-6xl text-offwhite font-extrabold tracking-wider"
           variants={h1Variant}
           initial="hidden"
           animate="visible"
         >
-          Best i test
+          Solid kunnskap
         </motion.h1>
       </div>
       <div className="absolute inset-0 flex justify-center top-60 lg:top-72 z-20">
         <motion.h2
-          className="text-xl lg:text-4xl text-offwhite font-extrabold tracking-wider uppercase"
+          className="text-lg lg:text-2xl text-offwhite font-extrabold tracking-wider uppercase"
           variants={h2Variant}
           initial="hidden"
           animate="visible"
         >
-          Siden 1992
+          betyr gode resultater
         </motion.h2>
       </div>
-      <div className="absolute inset-0 flex justify-center z-20 top-36 lg:top-52">
+      <div className="absolute inset-0 flex justify-center z-20 top-24 lg:top-40">
         <motion.img
-          src="/images/blackburger.png"
+          src="/images/logo/alesgtransparent.png"
           // src="/images/nesbrukebab/nesbrukebabwhite.png"
-          alt="logo picture/burger"
-          className="w-full h-screen58 object-contain lg:h-screen75 opacity-90"
+          alt="Ale Salesgroup AS Logo"
+          className="w-3/5 h-screen58 object-contain lg:h-screen75 opacity-90"
           variants={POPEFFECT}
           initial="hidden"
           animate="visible"
@@ -75,12 +75,12 @@ export default function Hero() {
       <div className="absolute inset-0 flex justify-center top-3/4 z-40">
         <Link to="menu" smooth={true} duration={SCROLL_DURATION}>
           <motion.button
-            className="button"
+            className="flex rounded-full py-4 px-10 uppercase font-semibold text-sm lg:text-base tracking-wider border-2 hover:border-white hover:bg-transparent hover:text-offwhite text-offblack bg-theme-600 border-theme-600 transition ease-out duration-500"
             variants={buttonVariant}
             initial="hidden"
             animate="visible"
           >
-            Meny
+            Kontakt oss
           </motion.button>
         </Link>
       </div>

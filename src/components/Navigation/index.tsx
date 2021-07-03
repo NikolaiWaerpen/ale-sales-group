@@ -7,6 +7,25 @@ import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+const dropdownOptions = [
+  {
+    title: "Hjem",
+    to: "home",
+  },
+  {
+    title: "Om oss",
+    to: "home",
+  },
+  {
+    title: "Kunder",
+    to: "home",
+  },
+  {
+    title: "Kontakt",
+    to: "home",
+  },
+];
+
 const dropdownVariants = {
   hidden: {
     opacity: 0,
@@ -79,7 +98,7 @@ export default function Navigation() {
             >
               {(scrolledDown || navOpen) && (
                 <img
-                  src="/images/nesbrukebab/nesbrukebabblacktext.png"
+                  src="/images/logo/alesgreversetransparent.png"
                   alt="logo picture/burger"
                   className="max-w-xs max-h-14 lg:max-h-16 object-cover"
                 />
@@ -121,69 +140,23 @@ export default function Navigation() {
           animate="visible"
         >
           <ul
-            className={`uppercase py-1 paddingx 
+            className={`uppercase py-1 paddingx
             ${navOpen ? "divide-y divide-dropdownborder" : "font-bold pb-3"}`}
           >
-            <div>
-              <Link
-                to="home"
-                smooth={true}
-                duration={SCROLL_DURATION}
-                onClick={closeNav}
-              >
-                <li className="navoptions">
-                  <a className="texthovereffect">Til toppen</a>
-                </li>
-              </Link>
-            </div>
-            <div>
-              <Link
-                to="about"
-                smooth={true}
-                duration={SCROLL_DURATION}
-                onClick={closeNav}
-              >
-                <li className="navoptions">
-                  <a className="texthovereffect">Kebabkongen</a>
-                </li>
-              </Link>
-            </div>
-            <div>
-              <Link
-                to="menu"
-                smooth={true}
-                duration={SCROLL_DURATION}
-                onClick={closeNav}
-              >
-                <li className="navoptions">
-                  <a className="texthovereffect">Meny</a>
-                </li>
-              </Link>
-            </div>
-            <div>
-              <Link
-                to="hours"
-                smooth={true}
-                duration={SCROLL_DURATION}
-                onClick={closeNav}
-              >
-                <li className="navoptions">
-                  <a className="texthovereffect">Åpningstider</a>
-                </li>
-              </Link>
-            </div>
-            <div>
-              <Link
-                to="contact"
-                smooth={true}
-                duration={SCROLL_DURATION}
-                onClick={closeNav}
-              >
-                <li className="navoptions">
-                  <a className="texthovereffect">Finn oss</a>
-                </li>
-              </Link>
-            </div>
+            {dropdownOptions.map((option, key) => (
+              <div key={key}>
+                <Link
+                  to={option.to}
+                  smooth={true}
+                  duration={SCROLL_DURATION}
+                  onClick={closeNav}
+                >
+                  <li className="lg:px-5 lg:py-0 py-4 block">
+                    <a className="texthovereffect">{option.title}</a>
+                  </li>
+                </Link>
+              </div>
+            ))}
           </ul>
         </motion.div>
       )}
@@ -197,68 +170,22 @@ export default function Navigation() {
               `}
         >
           <ul
-            className={`flex justify-center uppercase py-1 paddingx font-bold pb-3`}
+            className={`flex justify-center uppercase py-1 paddingx font-bold pb-3 space-x-4`}
           >
-            <div>
-              <Link
-                to="home"
-                smooth={true}
-                duration={SCROLL_DURATION}
-                onClick={closeNav}
-              >
-                <li className="navoptions">
-                  <a className="texthovereffect">Til toppen</a>
-                </li>
-              </Link>
-            </div>
-            <div>
-              <Link
-                to="about"
-                smooth={true}
-                duration={SCROLL_DURATION}
-                onClick={closeNav}
-              >
-                <li className="navoptions">
-                  <a className="texthovereffect">Kebabkongen</a>
-                </li>
-              </Link>
-            </div>
-            <div>
-              <Link
-                to="menu"
-                smooth={true}
-                duration={SCROLL_DURATION}
-                onClick={closeNav}
-              >
-                <li className="navoptions">
-                  <a className="texthovereffect">Meny</a>
-                </li>
-              </Link>
-            </div>
-            <div>
-              <Link
-                to="hours"
-                smooth={true}
-                duration={SCROLL_DURATION}
-                onClick={closeNav}
-              >
-                <li className="navoptions">
-                  <a className="texthovereffect">Åpningstider</a>
-                </li>
-              </Link>
-            </div>
-            <div>
-              <Link
-                to="contact"
-                smooth={true}
-                duration={SCROLL_DURATION}
-                onClick={closeNav}
-              >
-                <li className="navoptions">
-                  <a className="texthovereffect">Finn oss</a>
-                </li>
-              </Link>
-            </div>
+            {dropdownOptions.map((option, key) => (
+              <div key={key}>
+                <Link
+                  to={option.to}
+                  smooth={true}
+                  duration={SCROLL_DURATION}
+                  onClick={closeNav}
+                >
+                  <li className="lg:px-5 lg:py-0 py-4 block">
+                    <a className="texthovereffect">{option.title}</a>
+                  </li>
+                </Link>
+              </div>
+            ))}
           </ul>
         </div>
       )}

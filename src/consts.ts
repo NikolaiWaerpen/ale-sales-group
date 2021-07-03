@@ -8,7 +8,7 @@ export const POPEFFECT = {
     scale: 1,
     transition: {
       type: "tween",
-      delay: 0.4,
+      delay: 0.1,
     },
   },
 };

@@ -44,7 +44,7 @@ export default function Partners() {
             {partners.map((partner) => (
               <li
                 key={partner.name}
-                className="py-10 px-6 bg-lightoffblack text-center rounded-lg xl:px-10 xl:text-left"
+                className="py-10 px-6 bg-lightoffblack text-center xl:px-10 xl:text-left"
               >
                 <div className="space-y-6 xl:space-y-10">
                   <img

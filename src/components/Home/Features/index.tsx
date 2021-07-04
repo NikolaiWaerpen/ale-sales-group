@@ -76,10 +76,10 @@ export default function Features() {
         <div className="relative lg:grid lg:grid-cols-3 lg:gap-x-8">
           <div className="lg:col-span-1">
             <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-              Hva vi tilbyr
+              Om oss
             </h2>
           </div>
-          <dl className="mt-10 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-8 sm:gap-y-10 lg:mt-0 lg:col-span-2">
+          {/* <dl className="mt-10 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-8 sm:gap-y-10 lg:mt-0 lg:col-span-2">
             {features.map((feature) => (
               <div key={feature.name}>
                 <dt>
@@ -95,6 +95,53 @@ export default function Features() {
                 </dd>
               </div>
             ))}
+          </dl> */}
+          <dl className="mt-10 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-8 sm:gap-y-10 lg:mt-0 lg:col-span-2">
+            <div className="max-w-md h-screen58 bg-offblack relative">
+              <img
+                src="/images/offer/offer1.webp"
+                className="object-cover max-full h-full bg-offblack opacity-30"
+              />
+              <div className="absolute top-1/4 left-1/2">
+                <div className="relative -left-1/2">
+                  <div className="grid place-items-center">
+                    <h3 className="text-white text-lg font-semibold">
+                      Verdier
+                    </h3>
+                    <p className="text-gray-200 text-center">
+                      Våre verdier er å hjelpe dere til en enklere hverdag! Våre
+                      medarbeidere er unge og kreative, og nettopp derfor kan de
+                      bidra med kreative og annerledes innspill. Engasjerte og
+                      dedikerte rådgivere som hjelper deg og tilpasser løsninger
+                      etter ditt behov.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="max-w-md h-screen58 bg-offblack relative">
+              <img
+                src="/images/offer/offer3.webp"
+                className="object-cover max-full h-full bg-offblack opacity-30"
+              />
+              <div className="absolute top-1/4 left-1/2">
+                <div className="relative -left-1/2">
+                  <div className="grid place-items-center w-60">
+                    <h3 className="text-white text-lg font-semibold">Mål</h3>
+                    <p className="text-gray-200 text-center">
+                      Vårt mål er å hjelpe din bedrift å effektivisere og møte
+                      deres utfordringer i forbindelse med dette. Gjennom et
+                      profesjonelt team med kompetanse innen de ulike fagfelt
+                      oppnår vi resultater. Vi kan forenkle din bedrifts
+                      tidsklemmer og utfordringer forbundet med dette. Det er
+                      viktig for oss å levere gode produkter og resultater, i
+                      tillegg til å være konkurransedyktige og fleksible på alle
+                      våre produkter.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </dl>
         </div>
       </div>

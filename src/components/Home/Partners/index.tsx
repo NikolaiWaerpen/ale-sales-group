@@ -48,7 +48,7 @@ export default function Partners() {
               >
                 <div className="space-y-6 xl:space-y-10">
                   <img
-                    className="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56"
+                    className="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56 object-scale-down"
                     src={partner.imageUrl}
                     alt=""
                   />

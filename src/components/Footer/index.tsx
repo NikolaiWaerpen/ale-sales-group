@@ -144,7 +144,7 @@ export default function Footer() {
           </div>
           <div>
             <p className="text-base text-gray-400 xl:text-center">
-              Copyright &copy; 2021 CleanBil AS.
+              Copyright &copy; 2021 Ale Sales Group AS.
             </p>
             <p className="text-base text-gray-400 xl:text-center">
               Utviklet og designet av{" "}

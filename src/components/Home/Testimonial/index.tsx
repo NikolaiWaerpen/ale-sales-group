@@ -62,8 +62,8 @@ export default function Testimonial() {
                   />
                 </div> */}
                 <div className="mt-3 text-center md:mt-0 md:ml-4 md:flex md:items-center">
-                  <div className="text-xl font-medium text-theme-700">
-                    Winston Churchill
+                  <div className="text-xl font-medium text-gray-400">
+                    - Winston Churchill
                   </div>
                   {/* 
                   <svg

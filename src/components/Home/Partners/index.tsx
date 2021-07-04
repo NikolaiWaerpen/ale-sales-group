@@ -54,8 +54,10 @@ export default function Partners() {
                   />
                   <div className="space-y-2 xl:flex xl:items-center xl:justify-between">
                     <div className="font-medium text-lg leading-6 space-y-1">
-                      <h3 className="text-theme-400">{partner.name}</h3>
-                      <p className="text-white">{partner.description}</p>
+                      <h3 className="text-gray-200">{partner.name}</h3>
+                      <p className="text-gray-400 font-light">
+                        {partner.description}
+                      </p>
                     </div>
                   </div>
                 </div>

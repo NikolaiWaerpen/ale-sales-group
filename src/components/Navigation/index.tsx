@@ -179,7 +179,7 @@ export default function Navigation() {
                   duration={SCROLL_DURATION}
                   onClick={closeNav}
                 >
-                  <a className="hover:text-theme-600 cursor-pointer">
+                  <a className="hover:text-gray-400 cursor-pointer transition ease-out duration-200">
                     {option.title}
                   </a>
                 </Link>

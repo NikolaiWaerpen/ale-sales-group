@@ -108,7 +108,7 @@ export default function Contact() {
                   name="first_name"
                   id="first_name"
                   autoComplete="given-name"
-                  className="py-3 px-4 block w-full shadow-sm focus:ring-theme-500 focus:border-theme-500 border-gray-300 rounded-md"
+                  className="py-3 px-4 block w-full shadow-sm focus:shadow-md border border-gray-400 rounded-md"
                 />
               </div>
             </div>
@@ -125,7 +125,7 @@ export default function Contact() {
                   name="last_name"
                   id="last_name"
                   autoComplete="family-name"
-                  className="py-3 px-4 block w-full shadow-sm focus:ring-theme-500 focus:border-theme-500 border-gray-300 rounded-md"
+                  className="py-3 px-4 block w-full shadow-sm focus:shadow-md border border-gray-400 rounded-md"
                 />
               </div>
             </div>
@@ -142,7 +142,7 @@ export default function Contact() {
                   name="company"
                   id="company"
                   autoComplete="organization"
-                  className="py-3 px-4 block w-full shadow-sm focus:ring-theme-500 focus:border-theme-500 border-gray-300 rounded-md"
+                  className="py-3 px-4 block w-full shadow-sm focus:shadow-md border border-gray-400 rounded-md"
                 />
               </div>
             </div>
@@ -159,7 +159,7 @@ export default function Contact() {
                   name="email"
                   type="email"
                   autoComplete="email"
-                  className="py-3 px-4 block w-full shadow-sm focus:ring-theme-500 focus:border-theme-500 border-gray-300 rounded-md"
+                  className="py-3 px-4 block w-full shadow-sm focus:shadow-md border border-gray-400 rounded-md"
                 />
               </div>
             </div>
@@ -170,8 +170,8 @@ export default function Contact() {
               >
                 Nummer
               </label>
-              <div className="mt-1 relative rounded-md shadow-sm">
-                <div className="absolute inset-y-0 left-0 flex items-center">
+              <div className="mt-1">
+                {/* <div className="absolute inset-y-0 left-0 flex items-center">
                   <label htmlFor="country" className="sr-only">
                     Land
                   </label>
@@ -182,13 +182,13 @@ export default function Contact() {
                   >
                     <option>NO</option>
                   </select>
-                </div>
+                </div> */}
                 <input
                   type="text"
                   name="phone_number"
                   id="phone_number"
                   autoComplete="tel"
-                  className="py-3 px-4 block w-full pl-20 focus:ring-theme-500 focus:border-theme-500 border-gray-300 rounded-md"
+                  className="py-3 px-4 block w-full shadow-sm focus:shadow-md border border-gray-400 rounded-md"
                   placeholder="+47 462 83 638"
                 />
               </div>
@@ -205,7 +205,7 @@ export default function Contact() {
                   id="message"
                   name="message"
                   rows={4}
-                  className="py-3 px-4 block w-full shadow-sm focus:ring-theme-500 focus:border-theme-500 border border-gray-300 rounded-md"
+                  className="py-3 px-4 block w-full shadow-sm focus:shadow-md border border-gray-400 rounded-md"
                   defaultValue={""}
                 />
               </div>
@@ -249,7 +249,7 @@ export default function Contact() {
             <div className="sm:col-span-2">
               <button
                 type="submit"
-                className="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-offblack bg-theme-600 hover:bg-theme-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-theme-500"
+                className="w-full inline-flex items-center justify-center px-6 py-3 border-2 border-transparent rounded-md shadow-sm focus:shadow-md text-base font-medium hover:text-offblack hover:bg-white hover:border-gray-400 text-white bg-offblack border-white transition ease-out duration-200"
               >
                 La oss ta en prat
               </button>

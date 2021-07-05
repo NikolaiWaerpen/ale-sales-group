@@ -49,7 +49,7 @@ export default function Portfolio() {
           <h2 className="text-base font-semibold text-gray-400 tracking-wide uppercase">
             Nåværende og tidligere
           </h2>
-          <p className="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
+          <p className="mt-1 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             Kundeportefølje
           </p>
           {/* <p className="max-w-xl mt-5 mx-auto text-xl text-gray-500">

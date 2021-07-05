@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Switch } from "@headlessui/react";
+import { useForm } from "@formspree/react";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -7,7 +7,7 @@ function classNames(...classes) {
 
 // Contact centered
 export default function Contact() {
-  const [agreed, setAgreed] = useState(false);
+  const [state, handleSubmit] = useForm("mbjqkbyn");
 
   return (
     <div
@@ -81,97 +81,105 @@ export default function Contact() {
             fill="url(#85737c0e-0916-41d7-917f-596dc7edfa27)"
           />
         </svg>
-        <div className="text-center">
-          <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            Kontakt oss
-          </h2>
-          <p className="mt-4 text-lg leading-6 text-gray-500">
-            Kontakt oss for en uforplinktende samtale i dag.
-          </p>
-        </div>
-        <div className="mt-12">
-          <form
-            action="#"
-            method="POST"
-            className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
-          >
-            <div>
-              <label
-                htmlFor="first_name"
-                className="block text-sm font-medium text-gray-700"
-              >
-                Fornavn
-              </label>
-              <div className="mt-1">
-                <input
-                  type="text"
-                  name="first_name"
-                  id="first_name"
-                  autoComplete="given-name"
-                  className="py-3 px-4 block w-full shadow-sm focus:shadow-md border border-gray-400 rounded-md"
-                />
-              </div>
+        {state.succeeded ? (
+          <div>
+            <h1 className="text-xl font-semibold grid place-items-center">
+              Takk! Vi vil kontakte deg i løpet av kort tid
+            </h1>
+          </div>
+        ) : (
+          <>
+            <div className="text-center">
+              <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                Kontakt oss
+              </h2>
+              <p className="mt-4 text-lg leading-6 text-gray-500">
+                Kontakt oss for en uforplinktende samtale i dag.
+              </p>
             </div>
-            <div>
-              <label
-                htmlFor="last_name"
-                className="block text-sm font-medium text-gray-700"
+
+            <div className="mt-12">
+              <form
+                onSubmit={handleSubmit}
+                className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
               >
-                Etternavn
-              </label>
-              <div className="mt-1">
-                <input
-                  type="text"
-                  name="last_name"
-                  id="last_name"
-                  autoComplete="family-name"
-                  className="py-3 px-4 block w-full shadow-sm focus:shadow-md border border-gray-400 rounded-md"
-                />
-              </div>
-            </div>
-            <div className="sm:col-span-2">
-              <label
-                htmlFor="company"
-                className="block text-sm font-medium text-gray-700"
-              >
-                Firma
-              </label>
-              <div className="mt-1">
-                <input
-                  type="text"
-                  name="company"
-                  id="company"
-                  autoComplete="organization"
-                  className="py-3 px-4 block w-full shadow-sm focus:shadow-md border border-gray-400 rounded-md"
-                />
-              </div>
-            </div>
-            <div className="sm:col-span-2">
-              <label
-                htmlFor="email"
-                className="block text-sm font-medium text-gray-700"
-              >
-                Epost
-              </label>
-              <div className="mt-1">
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  autoComplete="email"
-                  className="py-3 px-4 block w-full shadow-sm focus:shadow-md border border-gray-400 rounded-md"
-                />
-              </div>
-            </div>
-            <div className="sm:col-span-2">
-              <label
-                htmlFor="phone_number"
-                className="block text-sm font-medium text-gray-700"
-              >
-                Nummer
-              </label>
-              <div className="mt-1">
-                {/* <div className="absolute inset-y-0 left-0 flex items-center">
+                <div>
+                  <label
+                    htmlFor="fornavn"
+                    className="block text-sm font-medium text-gray-700"
+                  >
+                    Fornavn
+                  </label>
+                  <div className="mt-1">
+                    <input
+                      type="text"
+                      name="fornavn"
+                      id="fornavn"
+                      autoComplete="given-name"
+                      className="py-3 px-4 block w-full shadow-sm focus:shadow-md border border-gray-400 rounded-md"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <label
+                    htmlFor="etternavn"
+                    className="block text-sm font-medium text-gray-700"
+                  >
+                    Etternavn
+                  </label>
+                  <div className="mt-1">
+                    <input
+                      type="text"
+                      name="etternavn"
+                      id="etternavn"
+                      autoComplete="family-name"
+                      className="py-3 px-4 block w-full shadow-sm focus:shadow-md border border-gray-400 rounded-md"
+                    />
+                  </div>
+                </div>
+                <div className="sm:col-span-2">
+                  <label
+                    htmlFor="firma"
+                    className="block text-sm font-medium text-gray-700"
+                  >
+                    Firma
+                  </label>
+                  <div className="mt-1">
+                    <input
+                      type="text"
+                      name="firma"
+                      id="firma"
+                      autoComplete="organization"
+                      className="py-3 px-4 block w-full shadow-sm focus:shadow-md border border-gray-400 rounded-md"
+                    />
+                  </div>
+                </div>
+                <div className="sm:col-span-2">
+                  <label
+                    htmlFor="epost"
+                    className="block text-sm font-medium text-gray-700"
+                  >
+                    Epost
+                  </label>
+                  <div className="mt-1">
+                    <input
+                      id="epost"
+                      name="epost"
+                      type="email"
+                      autoComplete="email"
+                      className="py-3 px-4 block w-full shadow-sm focus:shadow-md border border-gray-400 rounded-md"
+                    />
+                  </div>
+                </div>
+                <div className="sm:col-span-2">
+                  <label
+                    htmlFor="mobil"
+                    className="block text-sm font-medium text-gray-700"
+                  >
+                    Nummer
+                  </label>
+                  <div className="mt-1">
+                    {/* <div className="absolute inset-y-0 left-0 flex items-center">
                   <label htmlFor="country" className="sr-only">
                     Land
                   </label>
@@ -183,34 +191,34 @@ export default function Contact() {
                     <option>NO</option>
                   </select>
                 </div> */}
-                <input
-                  type="text"
-                  name="phone_number"
-                  id="phone_number"
-                  autoComplete="tel"
-                  className="py-3 px-4 block w-full shadow-sm focus:shadow-md border border-gray-400 rounded-md"
-                  placeholder="+47 462 83 638"
-                />
-              </div>
-            </div>
-            <div className="sm:col-span-2">
-              <label
-                htmlFor="message"
-                className="block text-sm font-medium text-gray-700"
-              >
-                Melding
-              </label>
-              <div className="mt-1">
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={4}
-                  className="py-3 px-4 block w-full shadow-sm focus:shadow-md border border-gray-400 rounded-md"
-                  defaultValue={""}
-                />
-              </div>
-            </div>
-            {/* <div className="sm:col-span-2">
+                    <input
+                      type="text"
+                      name="mobil"
+                      id="mobil"
+                      autoComplete="tel"
+                      className="py-3 px-4 block w-full shadow-sm focus:shadow-md border border-gray-400 rounded-md"
+                      placeholder="+47 462 83 638"
+                    />
+                  </div>
+                </div>
+                <div className="sm:col-span-2">
+                  <label
+                    htmlFor="melding"
+                    className="block text-sm font-medium text-gray-700"
+                  >
+                    Melding
+                  </label>
+                  <div className="mt-1">
+                    <textarea
+                      id="melding"
+                      name="melding"
+                      rows={4}
+                      className="py-3 px-4 block w-full shadow-sm focus:shadow-md border border-gray-400 rounded-md"
+                      defaultValue={""}
+                    />
+                  </div>
+                </div>
+                {/* <div className="sm:col-span-2">
               <div className="flex items-start">
                 <div className="flex-shrink-0">
                   <Switch
@@ -246,16 +254,19 @@ export default function Contact() {
                 </div>
               </div>
             </div> */}
-            <div className="sm:col-span-2">
-              <button
-                type="submit"
-                className="w-full inline-flex items-center justify-center px-6 py-3 border-2 border-transparent rounded-md shadow-sm focus:shadow-md text-base font-medium hover:text-offblack hover:bg-white hover:border-gray-400 text-white bg-offblack border-white transition ease-out duration-200"
-              >
-                La oss ta en prat
-              </button>
+                <div className="sm:col-span-2">
+                  <button
+                    type="submit"
+                    disabled={state.submitting}
+                    className="w-full inline-flex items-center justify-center px-6 py-3 border-2 border-transparent rounded-md shadow-sm focus:shadow-md text-base font-medium hover:text-offblack hover:bg-white hover:border-gray-400 text-white bg-offblack border-white transition ease-out duration-200"
+                  >
+                    La oss ta en prat
+                  </button>
+                </div>
+              </form>
             </div>
-          </form>
-        </div>
+          </>
+        )}
       </div>
     </div>
   );

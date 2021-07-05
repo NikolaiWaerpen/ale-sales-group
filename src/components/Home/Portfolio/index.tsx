@@ -3,6 +3,42 @@ const portfolio = [
     name: "Hafslund",
     description: "Skredder strøm dørsalg privat markedet",
   },
+  {
+    name: "Telenor",
+    description: "Fiber dørsalg og TM",
+  },
+  {
+    name: "HomeNet",
+    description: "Fiber dørsalg privat og borettslag",
+  },
+  {
+    name: "SOS-Barnebyer",
+    description: "Stand, street og dørsalg",
+  },
+  {
+    name: "Hegnar media",
+    description: "Finansavisen, kapital TM B2B og privat",
+  },
+  {
+    name: "Alarmer Nokas",
+    description: "Dørsalg og privatmarkedet",
+  },
+  {
+    name: "Adio / Crescon",
+    description: "TM B2B",
+  },
+  {
+    name: "Telecom",
+    description: "Fiber- og nettverksløsninger",
+  },
+  {
+    name: "Telia",
+    description: "Nordens største leverandør av mobil- og bredbånd",
+  },
+  {
+    name: "CleanBil",
+    description: "Miljøvennlig, ny og banebrytende bilvask konsept",
+  },
 ];
 
 export default function Portfolio() {
@@ -20,14 +56,17 @@ export default function Portfolio() {
             Start building for free, then add a site plan to go live. Account
             plans unlock additional features.
           </p> */}
-          {portfolio.map((customer, key) => (
-            <ul key={key}>
-              <li>
-                {customer.name}
-                {customer.description}
+          <ul className="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-y-3">
+            {portfolio.map((customer, key) => (
+              <li key={key} className="flex flex-col justify-center">
+                <h2 className="text-2xl font-semibold text-gray-700">
+                  {customer.name}
+                </h2>
+                {/* <span>&nbsp;-&nbsp;</span> */}
+                {/* <p className="text-gray-500">{customer.description}</p> */}
               </li>
-            </ul>
-          ))}
+            ))}
+          </ul>
         </div>
       </div>
     </div>

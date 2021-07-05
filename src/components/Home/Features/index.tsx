@@ -37,7 +37,7 @@ const features = [
 
 export default function Features() {
   return (
-    <div className="bg-white overflow-hidden mt-16 mb-36">
+    <div className="bg-white overflow-hidden mb-36">
       <div className="relative max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <svg
           className="absolute top-0 left-full transform -translate-x-1/2 -translate-y-3/4 lg:left-auto lg:right-full lg:translate-x-2/3 lg:translate-y-1/4"
@@ -74,11 +74,11 @@ export default function Features() {
         </svg>
 
         <div className="relative">
-          <div className="lg:col-span-1 grid place-items-center mb-6">
+          {/* <div className="lg:col-span-1 grid place-items-center mb-6">
             <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
               Om oss
             </h2>
-          </div>
+          </div> */}
           {/* <dl className="mt-10 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-8 sm:gap-y-10 lg:mt-0 lg:col-span-2">
             {features.map((feature) => (
               <div key={feature.name}>

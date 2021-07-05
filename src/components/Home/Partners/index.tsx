@@ -1,18 +1,16 @@
 /* This example requires Tailwind CSS v2.0+ */
 const partners = [
-  {
-    name: "The Box",
-    description:
-      "Høykvalitets restaurantmat laget av profesjonelle kokker, leveres deg daglig! 10 ulike retter fra  alle verdens-hjørner basert på de beste råvarene. Her er løsningen på overtidsmat!",
-    // imageUrl: "http://placehold.jp/150x150.png",
-    imageUrl: "/images/partners/thebox.webp",
-    url: "#",
-  },
+  // {
+  //   name: "The Box",
+  //   description:
+  //     "Høykvalitets restaurantmat laget av profesjonelle kokker, leveres deg daglig! 10 ulike retter fra  alle verdens-hjørner basert på de beste råvarene. Her er løsningen på overtidsmat!",
+  //   imageUrl: "/images/partners/thebox.webp",
+  //   url: "#",
+  // },
   {
     name: "GlobalConnect",
     description:
       " Ledende leverandøren av fiberbasert datakommunikasjon og datasentre i Nordeuropa.",
-    // imageUrl: "http://placehold.jp/150x150.png",
     imageUrl: "/images/partners/globalconnect.webp",
     url: "#",
   },
@@ -20,7 +18,6 @@ const partners = [
     name: "CleanBil",
     description:
       "CleanBil er ett ambulerende vasketeam som vasker bilen når det passer deg og din bedrift, der du er! Vi leverer et miljøvennlig produkt. Visjon: kjemikalie fri og skånsom vask basert på damp.",
-    // imageUrl: "http://placehold.jp/150x150.png",
     imageUrl: "/images/partners/cleanbil.webp",
     url: "#",
   },
@@ -40,7 +37,7 @@ export default function Partners() {
               alene.
             </p>
           </div>
-          <ul className="space-y-4 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:grid-cols-3 lg:gap-8">
+          <ul className="space-y-4 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:grid-cols-2 lg:gap-8">
             {partners.map((partner) => (
               <li
                 key={partner.name}

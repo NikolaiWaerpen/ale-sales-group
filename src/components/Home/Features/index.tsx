@@ -73,8 +73,8 @@ export default function Features() {
           />
         </svg>
 
-        <div className="relative lg:grid lg:grid-cols-3 lg:gap-x-8">
-          <div className="lg:col-span-1">
+        <div className="relative">
+          <div className="lg:col-span-1 grid place-items-center mb-6">
             <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
               Om oss
             </h2>
@@ -96,7 +96,7 @@ export default function Features() {
               </div>
             ))}
           </dl> */}
-          <dl className="mt-10 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-8 sm:gap-y-10 lg:mt-0 lg:col-span-2">
+          <dl className="mt-10 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-3 sm:gap-x-8 sm:gap-y-10 lg:mt-0 lg:col-span-2">
             <div className="max-w-md h-screen58 bg-offblack relative">
               <img
                 src="/images/offer/offer1.webp"
@@ -121,7 +121,7 @@ export default function Features() {
             </div>
             <div className="max-w-md h-screen58 bg-offblack relative">
               <img
-                src="/images/offer/offer3.webp"
+                src="/images/offer/offer2.webp"
                 className="object-cover max-full h-full bg-offblack opacity-30"
               />
               <div className="absolute top-1/4 left-1/2">
@@ -133,10 +133,26 @@ export default function Features() {
                       deres utfordringer i forbindelse med dette. Gjennom et
                       profesjonelt team med kompetanse innen de ulike fagfelt
                       oppnår vi resultater. Vi kan forenkle din bedrifts
-                      tidsklemmer og utfordringer forbundet med dette. Det er
-                      viktig for oss å levere gode produkter og resultater, i
-                      tillegg til å være konkurransedyktige og fleksible på alle
-                      våre produkter.
+                      tidsklemmer og utfordringer forbundet med dette.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="max-w-md h-screen58 bg-offblack relative">
+              <img
+                src="/images/offer/offer3.webp"
+                className="object-cover max-full h-full bg-offblack opacity-30"
+              />
+              <div className="absolute top-1/4 left-1/2">
+                <div className="relative -left-1/2">
+                  <div className="grid place-items-center">
+                    <h3 className="text-white text-lg font-semibold">Visjon</h3>
+                    <p className="text-gray-200 text-center">
+                      Å hjelpe din bedrift til en effektiv og enklere hverdag.
+                      Det er viktig for oss å levere gode tjenester og
+                      resultater i tillegg til å være konkurransedyktige og
+                      fleksibele.
                     </p>
                   </div>
                 </div>

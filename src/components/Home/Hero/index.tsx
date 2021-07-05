@@ -64,7 +64,6 @@ export default function Hero() {
       <div className="absolute inset-0 flex justify-center z-20 top-24 lg:top-40">
         <motion.img
           src="/images/logo/alesgtransparent.png"
-          // src="/images/nesbrukebab/nesbrukebabwhite.png"
           alt="Ale Salesgroup AS Logo"
           className="w-3/5 h-screen58 object-contain lg:h-screen75 opacity-100"
           variants={POPEFFECT}

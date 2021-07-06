@@ -113,6 +113,7 @@ export default function Contact() {
                   <div className="mt-1">
                     <input
                       type="text"
+                      placeholder="Fornavn"
                       name="fornavn"
                       id="fornavn"
                       autoComplete="given-name"
@@ -130,6 +131,7 @@ export default function Contact() {
                   <div className="mt-1">
                     <input
                       type="text"
+                      placeholder="Etternavn"
                       name="etternavn"
                       id="etternavn"
                       autoComplete="family-name"
@@ -147,6 +149,7 @@ export default function Contact() {
                   <div className="mt-1">
                     <input
                       type="text"
+                      placeholder="Firma"
                       name="firma"
                       id="firma"
                       autoComplete="organization"
@@ -164,6 +167,7 @@ export default function Contact() {
                   <div className="mt-1">
                     <input
                       id="epost"
+                      placeholder="ola@nordmann.no"
                       name="epost"
                       type="email"
                       autoComplete="email"
@@ -211,6 +215,7 @@ export default function Contact() {
                   <div className="mt-1">
                     <textarea
                       id="melding"
+                      placeholder="Skriv en melding..."
                       name="melding"
                       rows={4}
                       className="py-3 px-4 block w-full shadow-sm focus:shadow-md border border-gray-400 rounded-md"

@@ -7,10 +7,10 @@ const portfolio = [
   //   name: "Telenor",
   //   description: "Fiber dørsalg og TM",
   // },
-  {
-    name: "HomeNet",
-    description: "Fiber dørsalg privat og borettslag",
-  },
+  // {
+  //   name: "HomeNet",
+  //   description: "Fiber dørsalg privat og borettslag",
+  // },
   {
     name: "SOS-Barnebyer",
     description: "Stand, street og dørsalg",

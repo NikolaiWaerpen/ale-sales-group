@@ -3,10 +3,10 @@ const portfolio = [
     name: "Hafslund",
     description: "Skredder strøm dørsalg privat markedet",
   },
-  {
-    name: "Telenor",
-    description: "Fiber dørsalg og TM",
-  },
+  // {
+  //   name: "Telenor",
+  //   description: "Fiber dørsalg og TM",
+  // },
   {
     name: "HomeNet",
     description: "Fiber dørsalg privat og borettslag",
@@ -31,10 +31,10 @@ const portfolio = [
     name: "Telecom",
     description: "Fiber- og nettverksløsninger",
   },
-  {
-    name: "Telia",
-    description: "Nordens største leverandør av mobil- og bredbånd",
-  },
+  // {
+  //   name: "Telia",
+  //   description: "Nordens største leverandør av mobil- og bredbånd",
+  // },
   {
     name: "CleanBil",
     description: "Miljøvennlig, ny og banebrytende bilvask konsept",

@@ -8,7 +8,7 @@ const partners = [
   //   url: "#",
   // },
   {
-    name: "GlobalConnect",
+    name: "Global Connect",
     description:
       " Ledende leverandøren av fiberbasert datakommunikasjon og datasentre i Nordeuropa.",
     imageUrl: "/images/partners/globalconnect.webp",
@@ -19,6 +19,13 @@ const partners = [
     description:
       "CleanBil er ett ambulerende vasketeam som vasker bilen når det passer deg og din bedrift, der du er! Vi leverer et miljøvennlig produkt. Visjon: kjemikalie fri og skånsom vask basert på damp.",
     imageUrl: "/images/partners/cleanbil.webp",
+    url: "#",
+  },
+  {
+    name: "Switchit",
+    description:
+      "Arbeider med digital markedsføring, møtebooking, digitale møterom, bemanning, E-sport og fiber.",
+    imageUrl: "/images/partners/switchit.webp",
     url: "#",
   },
 ];
@@ -37,7 +44,7 @@ export default function Partners() {
               alene.
             </p>
           </div>
-          <ul className="space-y-4 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:grid-cols-2 lg:gap-8">
+          <ul className="space-y-4 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:grid-cols-3 lg:gap-8">
             {partners.map((partner) => (
               <li
                 key={partner.name}

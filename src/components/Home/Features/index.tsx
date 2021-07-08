@@ -102,11 +102,11 @@ export default function Features() {
                 src="/images/offer/offer1.webp"
                 className="object-cover max-full h-full bg-offblack opacity-30"
               />
-              <div className="absolute top-52 left-1/2">
+              <div className="absolute top-28 lg:top-52 left-1/2">
                 <div className="relative -left-1/2">
                   <div className="grid place-items-center">
                     <h3 className="text-white text-lg font-semibold">Mål</h3>
-                    <p className="text-gray-200 text-center">
+                    <p className="text-gray-200 text-center text-sm md:text-base">
                       {/* Våre verdier er å hjelpe dere til en enklere hverdag! */}
                       Ale Sales Group gjennomfører effektive salgsoppdrag med
                       kvalitet og positive kundeopplevelser som fokusområde.
@@ -122,11 +122,11 @@ export default function Features() {
                 src="/images/offer/offer2.webp"
                 className="object-cover max-full h-full bg-offblack opacity-30"
               />
-              <div className="absolute top-24 left-1/2">
+              <div className="absolute top-6 md:top-24 left-1/2">
                 <div className="relative -left-1/2">
                   <div className="grid place-items-center w-60">
                     <h3 className="text-white text-lg font-semibold">Salg</h3>
-                    <p className="text-gray-200 text-center">
+                    <p className="text-gray-200 text-center text-sm md:text-base">
                       {/* Vårt mål er å hjelpe din bedrift å effektivisere og møte
                       deres utfordringer i forbindelse med dette. Gjennom et
                       profesjonelt team med kompetanse innen de ulike fagfelt
@@ -143,7 +143,7 @@ export default function Features() {
                       representant for et produkt eller tjeneste og en kunde
                     også innebærer en viktig omdømmefaktor */}
                       Vi jobber daglig med ulike salgs- og markedsaktiviteter
-                      mot sluttkunde. Det brukes relevante salgsverktøy for å
+                      mot sluttkunde. Vi bruker relevante salgsverktøy for å
                       gjennomføre disse aktivitetene på en strukturert og
                       målrettet måte. Vi har lang erfaring innen salg og
                       markedsføring med fokus på å skape resultater innen
@@ -154,7 +154,7 @@ export default function Features() {
                     gjennom flere år i et tøft og konkurranseutsatt marked. */}
                       {/*  */}
                     </p>
-                    <p className="text-gray-200 text-center mt-3">
+                    <p className="text-gray-200 text-center mt-3 text-sm md:text-base">
                       Vi bruker et bredt spekter av kanaler for å kunne tilpasse
                       oss behovene til våre oppdragsgivere og det er
                       kombinasjonen og synergien mellom kanalene som ofte gir de
@@ -169,16 +169,16 @@ export default function Features() {
                 src="/images/offer/offer3.webp"
                 className="object-cover max-full h-full bg-offblack opacity-30"
               />
-              <div className="absolute top-32 left-1/2">
+              <div className="absolute top-6 lg:top-32 left-1/2">
                 <div className="relative -left-1/2">
                   <div className="grid place-items-center">
                     <h3 className="text-white text-lg font-semibold">Visjon</h3>
-                    <p className="text-gray-200 text-center">
+                    <p className="text-gray-200 text-center text-sm md:text-base">
                       Å hjelpe din bedrift til en effektiv og enklere hverdag.
                       Det er viktig for oss å levere gode resultater i tillegg
                       til å være konkurransedyktige og fleksible.
                     </p>
-                    <p className="text-gray-200 text-center mt-3">
+                    <p className="text-gray-200 text-center mt-3 text-sm md:text-base">
                       Ale Sales Group gjennomfører effektive salgsoppdrag med
                       kvalitet og positive kundeopplevelser som fokusområde.
                       Vårt mål er å gi våre kunder en enklere hverdag ved å

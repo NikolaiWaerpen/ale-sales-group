@@ -7,13 +7,13 @@ const partners = [
   //   imageUrl: "/images/partners/thebox.webp",
   //   url: "#",
   // },
-  {
-    name: "Global Connect",
-    description:
-      " Ledende leverandøren av fiberbasert datakommunikasjon og datasentre i Nordeuropa.",
-    imageUrl: "/images/partners/globalconnect.webp",
-    url: "#",
-  },
+  // {
+  //   name: "Global Connect",
+  //   description:
+  //     " Ledende leverandøren av fiberbasert datakommunikasjon og datasentre i Nordeuropa.",
+  //   imageUrl: "/images/partners/globalconnect.webp",
+  //   url: "#",
+  // },
   {
     name: "CleanBil",
     description:
@@ -21,30 +21,30 @@ const partners = [
     imageUrl: "/images/partners/cleanbil.webp",
     url: "#",
   },
-  {
-    name: "Switchit",
-    description:
-      "Arbeider med digital markedsføring, møtebooking, digitale møterom, bemanning, E-sport og fiber.",
-    imageUrl: "/images/partners/switchit.webp",
-    url: "#",
-  },
+  // {
+  //   name: "Switchit",
+  //   description:
+  //     "Arbeider med digital markedsføring, møtebooking, digitale møterom, bemanning, E-sport og fiber.",
+  //   imageUrl: "/images/partners/switchit.webp",
+  //   url: "#",
+  // },
 ];
 
 export default function Partners() {
   return (
     <div className="bg-offblack py-16" id="partnere">
-      <div className="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
+      <div className="mx-auto py-12 px-4 max-w-3xl sm:px-6 lg:px-8 lg:py-24">
         <div className="space-y-12">
           <div className="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none">
             <h2 className="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">
-              Våre samarbeidspartnere
+              Vår samarbeidspartner
             </h2>
             <p className="text-xl text-gray-300">
               Vi vet at godt samarbeid tar oss lengre distanser enn vi kan reise
               alene.
             </p>
           </div>
-          <ul className="space-y-4 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:grid-cols-3 lg:gap-8">
+          <ul className="space-y-4 sm:grid sm:grid-cols-1 sm:gap-6 sm:space-y-0 lg:grid-cols-1 lg:gap-8">
             {partners.map((partner) => (
               <li
                 key={partner.name}

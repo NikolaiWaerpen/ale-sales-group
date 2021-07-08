@@ -27,6 +27,9 @@ module.exports = {
         screen75: "75vh",
         screen58: "58vh",
       },
+      top: {
+        "1/5": "20%",
+      },
     },
     variants: {
       extend: {},

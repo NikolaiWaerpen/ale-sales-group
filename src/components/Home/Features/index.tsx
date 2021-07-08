@@ -102,7 +102,7 @@ export default function Features() {
                 src="/images/offer/offer1.webp"
                 className="object-cover max-full h-full bg-offblack opacity-30"
               />
-              <div className="absolute top-1/4 left-1/2">
+              <div className="absolute top-52 left-1/2">
                 <div className="relative -left-1/2">
                   <div className="grid place-items-center">
                     <h3 className="text-white text-lg font-semibold">Mål</h3>
@@ -122,7 +122,7 @@ export default function Features() {
                 src="/images/offer/offer2.webp"
                 className="object-cover max-full h-full bg-offblack opacity-30"
               />
-              <div className="absolute top-1/4 left-1/2">
+              <div className="absolute top-24 left-1/2">
                 <div className="relative -left-1/2">
                   <div className="grid place-items-center w-60">
                     <h3 className="text-white text-lg font-semibold">Salg</h3>
@@ -169,7 +169,7 @@ export default function Features() {
                 src="/images/offer/offer3.webp"
                 className="object-cover max-full h-full bg-offblack opacity-30"
               />
-              <div className="absolute top-1/4 left-1/2">
+              <div className="absolute top-32 left-1/2">
                 <div className="relative -left-1/2">
                   <div className="grid place-items-center">
                     <h3 className="text-white text-lg font-semibold">Visjon</h3>

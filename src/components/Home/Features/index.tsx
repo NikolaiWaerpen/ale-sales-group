@@ -150,9 +150,8 @@ export default function Features() {
                     <h3 className="text-white text-lg font-semibold">Visjon</h3>
                     <p className="text-gray-200 text-center">
                       Å hjelpe din bedrift til en effektiv og enklere hverdag.
-                      Det er viktig for oss å levere gode tjenester og
-                      resultater i tillegg til å være konkurransedyktige og
-                      fleksibele.
+                      Det er viktig for oss å levere gode resultater i tillegg
+                      til å være konkurransedyktige og fleksible.
                     </p>
                   </div>
                 </div>

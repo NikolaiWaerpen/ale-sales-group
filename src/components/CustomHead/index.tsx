@@ -29,7 +29,7 @@ export default function CustomHead() {
         sizes="16x16"
         href="favicon-16x16.png"
       />
-      <link rel="manifest" href="/site.webmanifest" />
+      <link rel="manifest" href="site.webmanifest" />
       <meta name="msapplication-TileColor" content="#131313" />
       <meta name="theme-color" content="#131313" />
 

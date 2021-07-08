@@ -23,10 +23,10 @@ const portfolio = [
     name: "Alarmer Nokas",
     description: "Dørsalg og privatmarkedet",
   },
-  {
-    name: "Adio / Crescon",
-    description: "TM B2B",
-  },
+  // {
+  //   name: "Adio / Crescon",
+  //   description: "TM B2B",
+  // },
   {
     name: "Telecom",
     description: "Fiber- og nettverksløsninger",

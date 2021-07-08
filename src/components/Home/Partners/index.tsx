@@ -33,7 +33,7 @@ export default function Partners() {
               Våre samarbeidspartnere
             </h2>
             <p className="text-xl text-gray-300">
-              Vi vet at gode samarbeid tar oss lengre distanser enn vi kan reise
+              Vi vet at godt samarbeid tar oss lengre distanser enn vi kan reise
               alene.
             </p>
           </div>

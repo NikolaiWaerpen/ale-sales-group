@@ -32,10 +32,11 @@ export default function Team() {
               Hvem vi er
             </h2>
             <p className="text-xl text-gray-500">
-              Vi er selgere i toppklassen med over 10 års sammenlagt
+              Vi er selgere med bred erfaring og over 10 års sammenlagt
               salgserfaring. Vårt engasjement, kreative løsninger og
               lærevillighet gir oss de nødvendige midlene til å overkomme alle
-              utfordringer.
+              utfordringer. Vi har et mål om å lære og utvikle våre selgere slik
+              at vi kan levere med både profesjonalitet og kvalitet.
             </p>
             {/* <p className="text-xl text-gray-500">
               Vi er selgere i toppklassen med over 10 års sammenlagt

@@ -11,8 +11,10 @@ export default function Header() {
             Ta kontroll over arbeidshverdagen
           </p>
           <p className="max-w-xl mt-5 mx-auto text-xl text-gray-500">
-            Vår filosofi er å tenke nytt og forenkle din hverdag ved å tilby de
-            beste produktene fra ulike bransjer.
+            {/* Vår filosofi er å tenke nytt og forenkle din hverdag ved å tilby de
+            beste produktene fra ulike bransjer. */}
+            Vi spesialiser oss på strategisk kommunikasjon mellom bedrifter og
+            deres sluttbrukere.
           </p>
         </div>
       </div>

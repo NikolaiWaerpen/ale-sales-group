@@ -48,7 +48,7 @@ export default function Testimonial() {
           <blockquote className="mt-10">
             <div className="max-w-3xl mx-auto text-center text-4xl leading-9 font-medium text-gray-900">
               <p>
-                &ldquo;Success is not final; Failure is not fatal: It is the
+                &ldquo;Success is not final; failure is not fatal: it is the
                 courage to continue that counts.&rdquo;
               </p>
             </div>

@@ -102,8 +102,8 @@ export default function Features() {
                 src="/images/offer/offer1.webp"
                 className="object-cover max-full h-full bg-offblack opacity-30"
               />
-              <div className="absolute top-28 lg:top-52 left-1/2">
-                <div className="relative -left-1/2">
+              <div className="absolute top-1/3 left-1/2">
+                <div className="relative -top-1/2 -left-1/2">
                   <div className="grid place-items-center">
                     <h3 className="text-white text-lg font-semibold">Mål</h3>
                     <p className="text-gray-200 text-center text-sm md:text-base">

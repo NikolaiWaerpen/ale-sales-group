@@ -21,7 +21,7 @@ export default function Home() {
       <Contact />
       <ContactInfo />
       <Team />
-      {/* <Map /> */}
+      <Map />
     </>
   );
 }

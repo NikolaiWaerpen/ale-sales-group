@@ -7,6 +7,7 @@ import ContactInfo from "../components/Home/ContactInfo";
 import Team from "../components/Home/Team";
 import Contact from "../components/Home/Contact";
 import Portfolio from "../components/Home/Portfolio";
+import Map from "../components/Home/Map";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Contact />
       <ContactInfo />
       <Team />
+      {/* <Map /> */}
     </>
   );
 }

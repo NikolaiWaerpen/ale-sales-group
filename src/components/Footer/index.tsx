@@ -84,9 +84,9 @@ export default function Footer() {
                         smooth={true}
                         duration={SCROLL_DURATION}
                       >
-                        <a className="text-base text-gray-300 hover:text-white">
+                        <span className="text-base text-gray-300 hover:text-white">
                           {item.name}
-                        </a>
+                        </span>
                       </Link>
                     </li>
                   ))}

@@ -47,10 +47,7 @@ export default function Navigation() {
     else setNavOpen(true);
   };
 
-  const closeNav = () => {
-    setNavOpen(false);
-    console.log("fired");
-  };
+  const closeNav = () => setNavOpen(false);
 
   const changeBackground = () => {
     if (window.scrollY >= 10) setScrolledDown(true);
@@ -90,7 +87,7 @@ export default function Navigation() {
         {/* Logo */}
         <div>
           <Link to="home" smooth={true} duration={SCROLL_DURATION}>
-            <a
+            <span
               className={`${
                 scrolledDown ? "text-2xl" : "text-4xl"
               } font-bold texthovereffect`}
@@ -102,7 +99,7 @@ export default function Navigation() {
                   className="max-w-xs max-h-14 lg:max-h-16 object-cover"
                 />
               )}
-            </a>
+            </span>
           </Link>
         </div>
 
@@ -150,9 +147,9 @@ export default function Navigation() {
                   duration={SCROLL_DURATION}
                   onClick={closeNav}
                 >
-                  <li className="lg:px-5 lg:py-0 py-4 block">
-                    <a className="texthovereffect">{option.title}</a>
-                  </li>
+                  {/* <li className="lg:px-5 lg:py-0 py-4 block"> */}
+                  <span className="texthovereffect">{option.title}</span>
+                  {/* </li> */}
                 </Link>
               </div>
             ))}
@@ -179,9 +176,9 @@ export default function Navigation() {
                   duration={SCROLL_DURATION}
                   onClick={closeNav}
                 >
-                  <a className="hover:text-gray-400 cursor-pointer transition ease-out duration-200">
+                  <span className="hover:text-gray-400 cursor-pointer transition ease-out duration-200">
                     {option.title}
-                  </a>
+                  </span>
                 </Link>
               </li>
             ))}

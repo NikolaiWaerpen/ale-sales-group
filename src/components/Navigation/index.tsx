@@ -147,9 +147,9 @@ export default function Navigation() {
                   duration={SCROLL_DURATION}
                   onClick={closeNav}
                 >
-                  {/* <li className="lg:px-5 lg:py-0 py-4 block"> */}
-                  <span className="texthovereffect">{option.title}</span>
-                  {/* </li> */}
+                  <div className="lg:px-5 lg:py-0 py-4 block">
+                    <span className="texthovereffect">{option.title}</span>
+                  </div>
                 </Link>
               </div>
             ))}

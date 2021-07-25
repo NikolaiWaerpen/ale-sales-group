@@ -4,6 +4,7 @@ import {
   PhoneIcon,
   LocationMarkerIcon,
 } from "@heroicons/react/outline";
+import Map from "../Map";
 
 export default function ContactInfo() {
   return (
@@ -78,6 +79,7 @@ export default function ContactInfo() {
           </div>
         </div>
       </div>
+      <Map />
     </div>
   );
 }

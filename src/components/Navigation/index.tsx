@@ -94,7 +94,7 @@ export default function Navigation() {
             >
               {(scrolledDown || navOpen) && (
                 <img
-                  src="/images/logo/alesgreversetransparent.png"
+                  src="/images/logo/alesgreversetransparent.webp"
                   alt="logo picture/burger"
                   className="max-w-xs max-h-14 lg:max-h-16 object-cover"
                 />

@@ -25,6 +25,7 @@ module.exports = {
       },
       height: {
         screen75: "75vh",
+        screen68: "68vh",
         screen58: "58vh",
       },
       top: {

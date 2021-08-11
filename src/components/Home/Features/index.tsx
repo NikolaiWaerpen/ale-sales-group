@@ -97,12 +97,12 @@ export default function Features() {
             ))}
           </dl> */}
           <dl className="mt-10 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-3 sm:gap-x-8 sm:gap-y-10 lg:mt-0 lg:col-span-2">
-            <div className="max-w-md h-screen58 bg-offblack relative">
+            <div className="max-w-md h-screen75 bg-offblack relative">
               <img
                 src="/images/offer/offer1.webp"
                 className="object-cover max-full h-full bg-offblack opacity-30"
               />
-              <div className="absolute top-1/3 left-1/2">
+              <div className="absolute top-1/4 left-1/2">
                 <div className="relative -top-1/2 -left-1/2">
                   <div className="grid place-items-center">
                     <h3 className="text-white text-lg font-semibold">Mål</h3>
@@ -117,10 +117,10 @@ export default function Features() {
                 </div>
               </div>
             </div>
-            <div className="max-w-md h-screen58 bg-offblack relative">
+            <div className="max-w-md h-screen75 bg-offblack relative">
               <img
                 src="/images/offer/offer2.webp"
-                className="object-cover max-full h-full bg-offblack opacity-30"
+                className=" object-cover max-full h-full bg-offblack opacity-30"
               />
               <div className="absolute top-1/4 left-1/2">
                 <div className="relative -top-1/2 -left-1/2">
@@ -143,11 +143,13 @@ export default function Features() {
                       representant for et produkt eller tjeneste og en kunde
                     også innebærer en viktig omdømmefaktor */}
                       Vi jobber daglig med ulike salgs- og markedsaktiviteter
-                      mot sluttkunde. Vi bruker relevante salgsverktøy for å
+                      mot sluttkunde.{" "}
+                      {/* Vi bruker relevante salgsverktøy for å
                       gjennomføre disse aktivitetene på en strukturert og
-                      målrettet måte. Vi har lang erfaring innen salg og
-                      markedsføring med fokus på å skape resultater innen
-                      forretningsområdene telemarketing, dørsalg og promotering.
+                      målrettet måte. */}
+                      Vi har lang erfaring innen salg og markedsføring med fokus
+                      på å skape resultater innen forretningsområdene
+                      telemarketing, dørsalg og promotering.
                       {/* Vi har gjennom mange år i bransjen opparbeidet oss et
                       solid nettverk med tilgang til høykompetente agenter. Vi
                       kan vise til solid kunnskap og meget gode resultater
@@ -164,7 +166,7 @@ export default function Features() {
                 </div>
               </div>
             </div>
-            <div className="max-w-md h-screen58 bg-offblack relative">
+            <div className="max-w-md h-screen75 bg-offblack relative">
               <img
                 src="/images/offer/offer3.webp"
                 className="object-cover max-full h-full bg-offblack opacity-30"

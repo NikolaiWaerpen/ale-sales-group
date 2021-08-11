@@ -41,7 +41,7 @@ export default function Hero() {
         alt="Meeting"
         className="w-screen h-screen75 lg:h-screen object-cover object-center opacity-20"
       />
-      <div className="absolute inset-0 flex justify-center top-48 lg:top-52 z-20">
+      <div className="absolute inset-0 flex justify-center top-48 lg:top-36 z-20">
         <motion.h1
           className="text-4xl lg:text-6xl text-white font-extrabold tracking-wider"
           variants={h1Variant}
@@ -51,7 +51,7 @@ export default function Hero() {
           Solid kunnskap
         </motion.h1>
       </div>
-      <div className="absolute inset-0 flex justify-center top-60 lg:top-72 z-20 opacity-90">
+      <div className="absolute inset-0 flex justify-center top-60 lg:top-52 z-20 opacity-90">
         <motion.h2
           className="text-md lg:text-xl text-white font-extrabold tracking-wider uppercase "
           variants={h2Variant}
@@ -61,11 +61,11 @@ export default function Hero() {
           gir utrolige resultater
         </motion.h2>
       </div>
-      <div className="absolute inset-0 flex justify-center z-20 top-24 lg:top-40">
+      <div className="absolute inset-0 flex justify-center z-20 top-24 lg:top-32">
         <motion.img
           src="/images/logo/alesgtransparent.webp"
           alt="Ale Salesgroup AS Logo"
-          className="w-3/5 h-screen58 object-contain lg:h-screen75 opacity-100"
+          className="w-2/5 h-screen58 object-contain lg:h-screen75 opacity-100"
           variants={POPEFFECT}
           initial="hidden"
           animate="visible"
@@ -74,7 +74,7 @@ export default function Hero() {
       <div className="absolute inset-0 flex justify-center top-3/4 z-40">
         <Link to="kontakt" smooth={true} duration={SCROLL_DURATION}>
           <motion.button
-            className="flex rounded-md py-4 px-10 uppercase font-semibold text-sm lg:text-base tracking-wider border-2 hover:border-white hover:bg-transparent hover:text-white text-offblack bg-white border-white transition ease-out duration-500"
+            className="flex rounded-md py-3.5 px-7 uppercase font-semibold text-sm lg:text-base tracking-wider border-2 hover:border-white hover:bg-transparent hover:text-white text-offblack bg-white border-white transition ease-out duration-500"
             variants={buttonVariant}
             initial="hidden"
             animate="visible"
